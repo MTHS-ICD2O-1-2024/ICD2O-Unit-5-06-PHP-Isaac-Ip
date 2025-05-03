@@ -34,14 +34,13 @@
           <?php
           $lengthA = $_GET["value-1"];
           $lengthB = $_GET["value-2"];
-          $product = 0;
 
           // process 
-          let $product = 0;
-          for (let i = 0; i < value2; i++) {
-            product += value1;
+          $product = 0;
+          for ($i = 0; $i < $value2; $i++) {
+            $product += $value1;
           }
-        document.getElementById("result").innerText += `${value1} x ${value2} = ${product}`;
+          echo "{$value1} x {$value2} = {$product}";
           ?>
         </div>
       </div>
