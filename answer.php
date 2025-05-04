@@ -32,8 +32,8 @@
       <div class="page-content-php">
         <div id="submit">
           <?php
-          $lengthA = $_GET["value-1"];
-          $lengthB = $_GET["value-2"];
+          $valueA = $_GET["value-1"];
+          $valueB = $_GET["value-2"];
 
           // process 
           $product = 0;
