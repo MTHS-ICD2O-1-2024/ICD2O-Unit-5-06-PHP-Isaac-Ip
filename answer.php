@@ -37,9 +37,16 @@
 
           // process 
           $product = 0;
-          for ($i = 0; $i < $value2; $i++) {
+            $i = 0;
+            while ($i < $value2) {
             $product += $value1;
+            $i++;
+            }
+          // Adjust for negative numbers
+          if (($value1 < 0 && $value2 > 0) || ($value1 > 0 && $value2 < 0)) {
+            $product = -$product;
           }
+
           echo "{$value1} x {$value2} = {$product}";
           ?>
         </div>
